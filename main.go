@@ -7,7 +7,15 @@ import (
 
 // Main application
 func main() {
-	fmt.Println(deckBuilder())
+
+	field := cardFieldCreator()
+	for i := 0; i < len(field); i++ {
+		fmt.Println(field[i])
+	}
+
+	for i := 0; i < len(field[0]); i++ {
+
+	}
 
 }
 
@@ -56,6 +64,11 @@ func deckBuilder() []string {
 // Main deck
 func mainDeck() {
 
+}
+
+func cardFieldCreator() [7][10]string {
+	matrix := [7][10]string{}
+	return matrix
 }
 
 /*
